@@ -1,26 +1,28 @@
+import ProductModel from "./ProductModel";
+import products from "./products-temporary.json";
+
 function ProductList() {
+  const data = products.map((product) => (
+    <ProductModel
+      id={product.id}
+      name={product.name}
+      image={product.image}
+      price={product.price}
+    />
+  ));
+
   return (
     <table>
       <thead>
         <tr>
+          <th>ID</th>
           <th>Image</th>
           <th>Name</th>
           <th>Price</th>
           <th>Functions</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>image</td>
-          <td>Acer Predator</td>
-          <td>512$</td>
-          <td>
-            <button type="button">Delete</button>
-            <button type="button">Edit</button>
-            <button type="button">More Info</button>
-          </td>
-        </tr>
-      </tbody>
+      <tbody>{data}</tbody>
     </table>
   );
 }
