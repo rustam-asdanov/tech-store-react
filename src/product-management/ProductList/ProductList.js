@@ -1,7 +1,7 @@
-import ProductModel from "./ProductModel";
-import products from "./products-temporary.json";
+import ProductModel from "../ProductModel/ProductModel";
+import products from "../products-temporary.json";
 
-function ProductList() {
+const ProductList = () => {
   const data = products.map((product) => (
     <ProductModel
       id={product.id}
@@ -25,6 +25,6 @@ function ProductList() {
       <tbody>{data}</tbody>
     </table>
   );
-}
+};
 
 export default ProductList;

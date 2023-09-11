@@ -3,30 +3,45 @@
     "id": 1,
     "name": "Dell XPS 13",
     "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-    "price": "$1,299.99"
+    "price": "$1,299.99",
+    "brand": "Dell",
+    "model": "XPS 13",
+    "processor": "Intel Core i7-1165G7",
+    "ram": "16GB DDR4",
+    "storage": "512GB SSD",
+    "screenSize": "13.4 inches",
+    "weight": "2.7 pounds",
+    "batteryLife": "Up to 14 hours",
+    "description": "The Dell XPS 13 is a premium ultrabook known for its sleek design, powerful performance, and long battery life. It's perfect for professionals on the go."
   },
   {
     "id": 2,
     "name": "Apple MacBook Air",
     "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-    "price": "$999.00"
+    "price": "$999.00",
+    "brand": "Apple",
+    "model": "MacBook Air",
+    "processor": "Apple M1",
+    "ram": "8GB LPDDR4X",
+    "storage": "256GB SSD",
+    "screenSize": "13.3 inches",
+    "weight": "2.8 pounds",
+    "batteryLife": "Up to 15 hours",
+    "description": "The Apple MacBook Air is renowned for its thin and lightweight design, stunning Retina display, and exceptional performance with the Apple M1 chip."
   },
   {
     "id": 3,
     "name": "HP Spectre x360",
     "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-    "price": "$1,199.99"
-  },
-  {
-    "id": 4,
-    "name": "Lenovo ThinkPad X1 Carbon",
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-    "price": "$1,399.00"
-  },
-  {
-    "id": 5,
-    "name": "Asus ZenBook Pro Duo",
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-    "price": "$2,299.99"
+    "price": "$1,199.99",
+    "brand": "HP",
+    "model": "Spectre x360",
+    "processor": "Intel Core i7-10750H",
+    "ram": "16GB DDR4",
+    "storage": "512GB SSD",
+    "screenSize": "15.6 inches",
+    "weight": "4.2 pounds",
+    "batteryLife": "Up to 10 hours",
+    "description": "The HP Spectre x360 is a versatile 2-in-1 laptop with a stunning OLED display, powerful performance, and a sleek, convertible design."
   }
 ]

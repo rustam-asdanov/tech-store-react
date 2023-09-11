@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import ProductList from "./product-management/ProductList";
+import ProductList from "./product-management/ProductList/ProductList";
 
 function App() {
   return (
