@@ -7,7 +7,7 @@ const ProductInfo = ({ id, toggleMoreInfo }) => {
   let productName = "";
   let image = "";
 
-  const productsInfo = entries.map(([key, value]) => {
+  const productsInfo = entries.map(([key, value], index) => {
     if (key === "image") {
       // Do something special when the key is "image"
       image = value;
@@ -19,7 +19,7 @@ const ProductInfo = ({ id, toggleMoreInfo }) => {
     } else {
       // Render a regular table row for other keys
       return (
-        <tr>
+        <tr key={index}>
           <td>{key}</td>
           <td>{value}</td>
         </tr>

@@ -1,0 +1,13 @@
+.box {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  background-color: yellow;
+  overflow: auto;
+}
+
+.image-box {
+  width: 50%;
+}

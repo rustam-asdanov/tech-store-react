@@ -4,6 +4,7 @@ import products from "../products-temporary.json";
 const ProductList = () => {
   const data = products.map((product) => (
     <ProductModel
+      key={product.id}
       id={product.id}
       name={product.name}
       image={product.image}
