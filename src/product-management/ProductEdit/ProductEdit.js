@@ -38,7 +38,9 @@ const ProductEdit = ({ id, toggleProductEdit }) => {
       // Render a regular table row for other keys
       return (
         <tr key={index}>
-          <td>{key}</td>
+          <td>
+            <label for={key}>{key}</label>
+          </td>
           <td>
             {key === "description" ? (
               <textarea
@@ -47,6 +49,7 @@ const ProductEdit = ({ id, toggleProductEdit }) => {
                 rows="10"
                 cols="51"
                 name={key}
+                id={key}
                 onChange={handleInputChange}
               />
             ) : (
@@ -55,6 +58,7 @@ const ProductEdit = ({ id, toggleProductEdit }) => {
                 defaultValue={value}
                 size="50"
                 name={key}
+                id={key}
                 onChange={handleInputChange}
               />
             )}
