@@ -1,7 +1,7 @@
 import data from "../products-temporary.json";
 import styles from "./ProductInfo.module.css";
 
-const ProductInfo = ({ id, toggleMoreInfo }) => {
+const ProductInfo = ({ id, toggleMoreInfoWindow }) => {
   const product = data.find((item) => item.id === id);
   const entries = Object.entries(product);
   let productName = "";
@@ -30,7 +30,7 @@ const ProductInfo = ({ id, toggleMoreInfo }) => {
   return (
     <div className={styles["box"]}>
       <span>
-        <button onClick={() => toggleMoreInfo(false)}>X</button>
+        <button onClick={() => toggleMoreInfoWindow(false)}>X</button>
       </span>
       <div>
         <img src={image} alt={productName} className={styles["image-box"]} />

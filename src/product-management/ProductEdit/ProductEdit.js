@@ -2,7 +2,7 @@ import { useState } from "react";
 import data from "../products-temporary.json";
 import styles from "./ProductEdit.module.css";
 
-const ProductEdit = ({ id, toggleProductEdit }) => {
+const ProductEdit = ({ id, toggleProductEditWindow }) => {
   const product = data.find((item) => item.id === id);
   const [formData, setFormData] = useState(product);
   const entries = Object.entries(product);
@@ -15,7 +15,7 @@ const ProductEdit = ({ id, toggleProductEdit }) => {
     console.log(formData);
     // TODO: add save function
     // send request to server to save product
-    toggleProductEdit(false);
+    toggleProductEditWindow(false);
   };
 
   const handleInputChange = (event) => {
@@ -39,7 +39,7 @@ const ProductEdit = ({ id, toggleProductEdit }) => {
       return (
         <tr key={index}>
           <td>
-            <label for={key}>{key}</label>
+            <label htmlFor={key}>{key}</label>
           </td>
           <td>
             {key === "description" ? (
@@ -71,7 +71,7 @@ const ProductEdit = ({ id, toggleProductEdit }) => {
   return (
     <div className={styles["box"]}>
       <span>
-        <button onClick={() => toggleProductEdit(false)}>X</button>
+        <button onClick={() => toggleProductEditWindow(false)}>X</button>
       </span>
       <form onSubmit={handleSubmit}>
         <div>
